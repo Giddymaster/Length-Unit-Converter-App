@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="top-section">
+      <h1 class="title">convert from any units to all units</h1>
+
+      <form>
+        <input class="input" type="number" placeholder="value" />
+
+        <select class="select" name="units" id="units">
+          <option value="base unit">-- base unit--</option>
+          <option value="millimeters">millimeters</option>
+          <option value="centimeters">centimeters</option>
+          <option value="decimeters">decimeters</option>
+          <option value="meters">meters</option>
+          <option value="dekameter">dekameter</option>
+          <option value="hectometer">hectometer</option>
+          <option value="kilometer">kilometer</option>
+        </select>
+
+        <button type="button">convert</button>
+      </form>
+
+      <p class="error-text"></p>
+    </div>
+
+    <div class="bottom-section">
+    </div>
+    <script src="/src/main.js"></script>
+  </body>
+</html>

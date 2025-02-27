@@ -1,0 +1,135 @@
+:root {
+  --primary-font: "Lora", serif
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  font-family: var(--primary-font);
+}
+
+.top-section{
+  background-color: lightgray;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+@media screen and (max-width: 34.375em) {
+  .top-section{
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+}
+
+.title{
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 34.375em) {
+  .title{
+    font-size: 2rem;
+  }
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+@media screen and (max-width: 34.375em) {
+  form {
+    flex-direction: column;
+  }
+}
+
+input{
+  width: 25rem;
+  height: 4rem;
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: var(--primary-font);
+  border-radius: .5rem;
+  border: none;
+}
+
+
+select{
+  width: 17rem;
+  height: 4rem;
+  padding: .5rem 1rem;
+  font-size: 2rem;
+  font-family: var(--primary-font);
+  border-radius: .5rem;
+  border-style: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 34.375em) {
+  select{
+    width: 25rem;
+  }
+}
+
+.red-border{
+  border: 2px solid red;
+}
+
+button{
+  background-color: rgb(10, 9, 9, 0.8);
+  color: white;
+  width: 9rem;
+  height: 4rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  padding: .5rem 1rem;
+  font-size: 2rem;
+  font-family: var(--primary-font);
+  border-radius: .5rem;
+}
+
+@media screen and (max-width: 34.375em) {
+  button{
+    width: 25rem;
+  }
+}
+
+.error-text{
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: red;
+}
+@media screen and (max-width: 34.375em) {
+  .error-text{
+    font-size: 1rem;
+  }
+}
+
+.bottom-section{
+  padding-top: 1rem;
+}
+
+.result-text{
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+span{
+  font-weight: bold;
+}
+
